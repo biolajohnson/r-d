@@ -144,6 +144,10 @@ span {
   transition: all 0.4s ease-out;
   z-index: 3;
 }
+.image img:nth-of-type(2) {
+  left: 68em;
+  top: 30em;
+}
 .image img.open {
   width: 580px;
   height: 780px;
@@ -221,13 +225,16 @@ nav ul li a {
     left: 5.5em;
     top: 10em;
   }
-  footer {
-    padding: 2em;
-    position: fixed;
-    bottom: 0;
-    padding: 1em;
-    font-size: 1.4em;
-    text-align: center;
+
+  .image .line-right {
+    position: absolute;
+    top: 15em;
+    left: 63em;
+    writing-mode: vertical-lr;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: black;
   }
   .image img.open {
     width: 50%;
@@ -249,8 +256,8 @@ nav ul li a {
     writing-mode: vertical-lr;
   }
   .image img:nth-of-type(2) {
-    left: 15em;
-    top: 66em;
+    left: 10em;
+    top: 70em;
   }
   .image img {
     width: 60%;
@@ -280,6 +287,12 @@ nav ul li a {
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
+  }
+
+  body {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
   }
 
   .nav-wrapper ul li {

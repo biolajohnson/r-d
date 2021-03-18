@@ -14,14 +14,24 @@
   </head>
   <body>
     <div class="container">
-      <header>
-        <h1>Rewired Differently</h1>
-        <nav>
-          <a href="#">philosophy</a>
-          <a href="#">about</a>
-          <a href="#">support</a>
-        </nav>
-      </header>
+      <nav>
+        <input type="checkbox" id="nav" class="hidden" />
+        <label for="nav" class="nav-btn">
+          <i></i>
+          <i></i>
+          <i></i>
+        </label>
+        <div class="logo">
+          <a href="#">Rewired Differently</a>
+        </div>
+        <div class="nav-wrapper">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Philosophy</a></li>
+            <li><a href="#">Shop</a></li>
+          </ul>
+        </div>
+      </nav>
 
       <div class="line">
         <h2 class="line-left">"every artist was first an amatuer"</h2>
@@ -57,7 +67,9 @@
         <span>18/21</span>
       </div>
     </div>
-    <footer>Designed by H-2 studio for Rewired Differently &copy; 2021</footer>
+    <footer>
+      <p>Designed by H-2 studio for Rewired Differently &copy; 2021</p>
+    </footer>
     <script>
       let image = document.querySelector(".img1");
       let image2 = document.querySelector(".img2");

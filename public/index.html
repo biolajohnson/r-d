@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="the-style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Rewired Differently</h1>
+        <nav>
+          <a href="#">philosophy</a>
+          <a href="#">about</a>
+          <a href="#">support</a>
+        </nav>
+      </header>
+
+      <div class="line">
+        <h2 class="line-left">"every artist was first an amatuer"</h2>
+      </div>
+      <div class="image">
+        <img src="img/DSC_0376-min.jpg" width="20%" class="img1" alt="" />
+        <h3>"creativity takes courage"</h3>
+
+        <div class="content">
+          <h1>
+            Nigerian <br />freedom of <br />
+            classic
+          </h1>
+          <p>
+            <i
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+              incidunt, est eum ullam voluptatum, alias molestiae rem facilis
+              amet sequi pariatur nisi eos eaque quidem odio illo placeat.
+              Obcaecati, consequuntur?</i
+            >
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo quas
+            fuga tempora quidem voluptatum esse eaque eligendi blanditiis eius
+            sequi quia officia, dolore ab omnis molestiae voluptates? Vitae,
+            amet obcaecati?
+          </p>
+        </div>
+        <img src="img/DSC_0374-min.jpg" alt="" width="20%" class="img2" />
+        <h4>i can and i will</h4>
+        <h2 class="line-right">"Die with memories, not dreams"</h2>
+        <h5>"everything we can imagine is real"</h5>
+        <span>18/21</span>
+      </div>
+    </div>
+    <footer>Designed by H-2 studio for Rewired Differently &copy; 2021</footer>
+    <script>
+      let image = document.querySelector(".img1");
+      let image2 = document.querySelector(".img2");
+      let content = document.querySelector(".content");
+
+      image.addEventListener("click", function () {
+        content.classList.toggle("active");
+        image.classList.toggle("open");
+      });
+      image2.addEventListener("click", function () {
+        content.classList.toggle("active");
+        image2.classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>

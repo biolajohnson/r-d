@@ -1,0 +1,19 @@
+{
+  "name": "rewired_differently",
+  "version": "1.0.0",
+  "description": "Art website",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "server": "nodemon index.js"
+  },
+  "keywords": [
+    "art",
+    "photographs"
+  ],
+  "author": "Abiola Johnson",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

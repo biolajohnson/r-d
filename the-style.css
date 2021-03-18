@@ -207,8 +207,19 @@ nav ul li a {
   font-weight: 600;
 }
 @media screen and (max-width: 864px) {
+  .container {
+    height: 200vh;
+  }
   .logo {
     padding: 0;
+  }
+  .line {
+    width: 0.1em;
+    height: 80vh;
+    background-color: grey;
+    position: absolute;
+    left: 5.5em;
+    top: 10em;
   }
   footer {
     padding: 2em;
@@ -227,14 +238,24 @@ nav ul li a {
     transition: all 0.4s ease-out;
     z-index: 3;
   }
+  .line .line-left {
+    position: absolute;
+    left: -2.4em;
+    top: 0em;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: black;
+    writing-mode: vertical-lr;
+  }
   .image img:nth-of-type(2) {
     left: 15em;
     top: 66em;
   }
   .image img {
-    width: 50%;
+    width: 60%;
     position: absolute;
-    left: 15em;
+    left: 10em;
     top: 10em;
     transition: all 0.4s;
   }
